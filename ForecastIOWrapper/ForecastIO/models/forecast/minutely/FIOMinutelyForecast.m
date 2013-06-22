@@ -12,6 +12,14 @@
 @implementation FIOMinutelyForecast
 
 #pragma mark - Initialization
+- (id)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super initWithDictionary:dictionary];
+    return self;
+}
+
++ (id)forecastWithDictionary:(NSDictionary *)dictionary {
+    return [[FIOMinutelyForecast alloc] initWithDictionary:dictionary];
+}
 - (void)updateDataPointsWithArray:(NSArray *)array {
 
     NSMutableArray *newDataPoints = [NSMutableArray array];

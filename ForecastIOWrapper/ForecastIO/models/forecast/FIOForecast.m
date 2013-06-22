@@ -23,6 +23,8 @@ NSString *const FIOForecastDataKey = @"data";
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
 
+    if (dictionary == nil) { return nil; }
+
     self = [self init];
     if (self) { [self updateWithDictionary:dictionary]; }
     return self;

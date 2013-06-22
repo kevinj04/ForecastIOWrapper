@@ -30,6 +30,8 @@
 		47EC2220177640B000D84C5E /* FIOHourlyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */; };
 		47EC22221776443600D84C5E /* FIODailyDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC22211776443600D84C5E /* FIODailyDataPointSpec.mm */; };
 		47EC22241776470C00D84C5E /* FIODailyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC22231776470C00D84C5E /* FIODailyForecastSpec.mm */; };
+		47EC22261776490D00D84C5E /* FIOWeatherSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC22251776490D00D84C5E /* FIOWeatherSpec.mm */; };
+		47EC222817764C4000D84C5E /* FIOForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC222717764C4000D84C5E /* FIOForecastSpec.mm */; };
 		47EC222B17764D8B00D84C5E /* FIOForecastDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC222A17764D8B00D84C5E /* FIOForecastDataPoint.m */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOHourlyForecastSpec.mm; sourceTree = "<group>"; };
 		47EC22211776443600D84C5E /* FIODailyDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIODailyDataPointSpec.mm; sourceTree = "<group>"; };
 		47EC22231776470C00D84C5E /* FIODailyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIODailyForecastSpec.mm; sourceTree = "<group>"; };
+		47EC22251776490D00D84C5E /* FIOWeatherSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOWeatherSpec.mm; sourceTree = "<group>"; };
+		47EC222717764C4000D84C5E /* FIOForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOForecastSpec.mm; sourceTree = "<group>"; };
 		47EC222917764D8B00D84C5E /* FIOForecastDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOForecastDataPoint.h; sourceTree = "<group>"; };
 		47EC222A17764D8B00D84C5E /* FIOForecastDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOForecastDataPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				47E0998A1776270B00C2A6EF /* forecast */,
+				47EC22251776490D00D84C5E /* FIOWeatherSpec.mm */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				47E0998B1776270B00C2A6EF /* daily */,
 				47E0998C1776270B00C2A6EF /* hourly */,
 				47E0998D1776270B00C2A6EF /* minutely */,
+				47EC222717764C4000D84C5E /* FIOForecastSpec.mm */,
 			);
 			path = forecast;
 			sourceTree = "<group>";
@@ -402,6 +408,8 @@
 				47EC2220177640B000D84C5E /* FIOHourlyForecastSpec.mm in Sources */,
 				47EC22221776443600D84C5E /* FIODailyDataPointSpec.mm in Sources */,
 				47EC22241776470C00D84C5E /* FIODailyForecastSpec.mm in Sources */,
+				47EC22261776490D00D84C5E /* FIOWeatherSpec.mm in Sources */,
+				47EC222817764C4000D84C5E /* FIOForecastSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

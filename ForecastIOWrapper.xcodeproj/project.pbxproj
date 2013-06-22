@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		47E09887177611B600C2A6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
-		47E0988C177611B600C2A6EF /* ForecastIOWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47E0988B177611B600C2A6EF /* ForecastIOWrapper.h */; };
-		47E0988E177611B600C2A6EF /* ForecastIOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0988D177611B600C2A6EF /* ForecastIOWrapper.m */; };
 		47E09896177611B600C2A6EF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09895177611B600C2A6EF /* SenTestingKit.framework */; };
 		47E09898177611B600C2A6EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09897177611B600C2A6EF /* UIKit.framework */; };
 		47E09899177611B600C2A6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
 		47E0989C177611B600C2A6EF /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
 		47E098A2177611B600C2A6EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47E098A0177611B600C2A6EF /* InfoPlist.strings */; };
 		47E098A5177611B600C2A6EF /* ForecastIOWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E098A4177611B600C2A6EF /* ForecastIOWrapperTests.m */; };
+		47E09966177618E200C2A6EF /* FIOAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09950177618E200C2A6EF /* FIOAPI.m */; };
+		47E09967177618E200C2A6EF /* FIODailyDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09955177618E200C2A6EF /* FIODailyDataPoint.m */; };
+		47E09968177618E200C2A6EF /* FIODailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09957177618E200C2A6EF /* FIODailyForecast.m */; };
+		47E09969177618E200C2A6EF /* FIOForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09959177618E200C2A6EF /* FIOForecast.m */; };
+		47E0996A177618E200C2A6EF /* FIOWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0995B177618E200C2A6EF /* FIOWeather.m */; };
+		47E0996B177618E200C2A6EF /* FIOHourDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0995E177618E200C2A6EF /* FIOHourDataPoint.m */; };
+		47E0996C177618E200C2A6EF /* FIOHourlyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09960177618E200C2A6EF /* FIOHourlyForecast.m */; };
+		47E0996D177618E200C2A6EF /* FIOMinuteDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09963177618E200C2A6EF /* FIOMinuteDataPoint.m */; };
+		47E0996E177618E200C2A6EF /* FIOMinutelyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09965177618E200C2A6EF /* FIOMinutelyForecast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				47E0988C177611B600C2A6EF /* ForecastIOWrapper.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +51,6 @@
 		47E09883177611B600C2A6EF /* libForecastIOWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libForecastIOWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E09886177611B600C2A6EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47E0988A177611B600C2A6EF /* ForecastIOWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForecastIOWrapper-Prefix.pch"; sourceTree = "<group>"; };
-		47E0988B177611B600C2A6EF /* ForecastIOWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastIOWrapper.h; sourceTree = "<group>"; };
-		47E0988D177611B600C2A6EF /* ForecastIOWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastIOWrapper.m; sourceTree = "<group>"; };
 		47E09894177611B600C2A6EF /* ForecastIOWrapperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastIOWrapperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E09895177611B600C2A6EF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		47E09897177611B600C2A6EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +58,24 @@
 		47E098A1177611B600C2A6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		47E098A3177611B600C2A6EF /* ForecastIOWrapperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastIOWrapperTests.h; sourceTree = "<group>"; };
 		47E098A4177611B600C2A6EF /* ForecastIOWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastIOWrapperTests.m; sourceTree = "<group>"; };
+		47E0994F177618E200C2A6EF /* FIOAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOAPI.h; sourceTree = "<group>"; };
+		47E09950177618E200C2A6EF /* FIOAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOAPI.m; sourceTree = "<group>"; };
+		47E09954177618E200C2A6EF /* FIODailyDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIODailyDataPoint.h; sourceTree = "<group>"; };
+		47E09955177618E200C2A6EF /* FIODailyDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIODailyDataPoint.m; sourceTree = "<group>"; };
+		47E09956177618E200C2A6EF /* FIODailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIODailyForecast.h; sourceTree = "<group>"; };
+		47E09957177618E200C2A6EF /* FIODailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIODailyForecast.m; sourceTree = "<group>"; };
+		47E09958177618E200C2A6EF /* FIOForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOForecast.h; sourceTree = "<group>"; };
+		47E09959177618E200C2A6EF /* FIOForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOForecast.m; sourceTree = "<group>"; };
+		47E0995A177618E200C2A6EF /* FIOWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIOWeather.h; path = forecast/FIOWeather.h; sourceTree = "<group>"; };
+		47E0995B177618E200C2A6EF /* FIOWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIOWeather.m; path = forecast/FIOWeather.m; sourceTree = "<group>"; };
+		47E0995D177618E200C2A6EF /* FIOHourDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOHourDataPoint.h; sourceTree = "<group>"; };
+		47E0995E177618E200C2A6EF /* FIOHourDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOHourDataPoint.m; sourceTree = "<group>"; };
+		47E0995F177618E200C2A6EF /* FIOHourlyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOHourlyForecast.h; sourceTree = "<group>"; };
+		47E09960177618E200C2A6EF /* FIOHourlyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOHourlyForecast.m; sourceTree = "<group>"; };
+		47E09962177618E200C2A6EF /* FIOMinuteDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOMinuteDataPoint.h; sourceTree = "<group>"; };
+		47E09963177618E200C2A6EF /* FIOMinuteDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOMinuteDataPoint.m; sourceTree = "<group>"; };
+		47E09964177618E200C2A6EF /* FIOMinutelyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOMinutelyForecast.h; sourceTree = "<group>"; };
+		47E09965177618E200C2A6EF /* FIOMinutelyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOMinutelyForecast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +133,7 @@
 		47E09888177611B600C2A6EF /* ForecastIOWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				47E0988B177611B600C2A6EF /* ForecastIOWrapper.h */,
-				47E0988D177611B600C2A6EF /* ForecastIOWrapper.m */,
+				47E0994E177618E200C2A6EF /* ForecastIO */,
 				47E09889177611B600C2A6EF /* Supporting Files */,
 			);
 			path = ForecastIOWrapper;
@@ -143,6 +164,71 @@
 				47E098A0177611B600C2A6EF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47E0994E177618E200C2A6EF /* ForecastIO */ = {
+			isa = PBXGroup;
+			children = (
+				47E0994F177618E200C2A6EF /* FIOAPI.h */,
+				47E09950177618E200C2A6EF /* FIOAPI.m */,
+				47E09951177618E200C2A6EF /* models */,
+			);
+			path = ForecastIO;
+			sourceTree = "<group>";
+		};
+		47E09951177618E200C2A6EF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				47E0995A177618E200C2A6EF /* FIOWeather.h */,
+				47E0995B177618E200C2A6EF /* FIOWeather.m */,
+				47E09952177618E200C2A6EF /* forecast */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		47E09952177618E200C2A6EF /* forecast */ = {
+			isa = PBXGroup;
+			children = (
+				47E09958177618E200C2A6EF /* FIOForecast.h */,
+				47E09959177618E200C2A6EF /* FIOForecast.m */,
+				47E09953177618E200C2A6EF /* daily */,
+				47E0995C177618E200C2A6EF /* hourly */,
+				47E09961177618E200C2A6EF /* minutely */,
+			);
+			path = forecast;
+			sourceTree = "<group>";
+		};
+		47E09953177618E200C2A6EF /* daily */ = {
+			isa = PBXGroup;
+			children = (
+				47E09954177618E200C2A6EF /* FIODailyDataPoint.h */,
+				47E09955177618E200C2A6EF /* FIODailyDataPoint.m */,
+				47E09956177618E200C2A6EF /* FIODailyForecast.h */,
+				47E09957177618E200C2A6EF /* FIODailyForecast.m */,
+			);
+			path = daily;
+			sourceTree = "<group>";
+		};
+		47E0995C177618E200C2A6EF /* hourly */ = {
+			isa = PBXGroup;
+			children = (
+				47E0995D177618E200C2A6EF /* FIOHourDataPoint.h */,
+				47E0995E177618E200C2A6EF /* FIOHourDataPoint.m */,
+				47E0995F177618E200C2A6EF /* FIOHourlyForecast.h */,
+				47E09960177618E200C2A6EF /* FIOHourlyForecast.m */,
+			);
+			path = hourly;
+			sourceTree = "<group>";
+		};
+		47E09961177618E200C2A6EF /* minutely */ = {
+			isa = PBXGroup;
+			children = (
+				47E09962177618E200C2A6EF /* FIOMinuteDataPoint.h */,
+				47E09963177618E200C2A6EF /* FIOMinuteDataPoint.m */,
+				47E09964177618E200C2A6EF /* FIOMinutelyForecast.h */,
+				47E09965177618E200C2A6EF /* FIOMinutelyForecast.m */,
+			);
+			path = minutely;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +329,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E0988E177611B600C2A6EF /* ForecastIOWrapper.m in Sources */,
+				47E09966177618E200C2A6EF /* FIOAPI.m in Sources */,
+				47E09967177618E200C2A6EF /* FIODailyDataPoint.m in Sources */,
+				47E09968177618E200C2A6EF /* FIODailyForecast.m in Sources */,
+				47E09969177618E200C2A6EF /* FIOForecast.m in Sources */,
+				47E0996A177618E200C2A6EF /* FIOWeather.m in Sources */,
+				47E0996B177618E200C2A6EF /* FIOHourDataPoint.m in Sources */,
+				47E0996C177618E200C2A6EF /* FIOHourlyForecast.m in Sources */,
+				47E0996D177618E200C2A6EF /* FIOMinuteDataPoint.m in Sources */,
+				47E0996E177618E200C2A6EF /* FIOMinutelyForecast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,12 @@
 #import "FIOHourlyForecast.h"
 #import "FIODailyForecast.h"
 
+extern NSString *const FIOWeatherCurrentlyKey;
+extern NSString *const FIOWeatherMinutelyKey;
+extern NSString *const FIOWeatherHourlyKey;
+extern NSString *const FIOWeatherDailyKey;
+
+// notification names
 extern NSString *const FIOWeatherUpdateSuccess;
 extern NSString *const FIOWeatherUpdateInProgress;
 extern NSString *const FIOWeatherUpdateUnknownFailure;
@@ -28,5 +34,6 @@ extern NSString *const FIOWeatherUpdateJSONParseFailure;
 @property (strong, nonatomic) FIODailyForecast *dailyForecast;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
++ (id)weatherWithDictionary:(NSDictionary *)dictionary;
 
 @end

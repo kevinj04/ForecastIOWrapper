@@ -26,36 +26,30 @@ NSString *const FIOWeatherUpdateJSONParseFailure = @"FIOWeatherUpdateJSONParseFa
 #pragma mark - Initialization
 - (id)init {
 
-    self = [[super class] init];
+    self = [super init];
     return self;
 }
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
 
-    self = [FIOWeather init];
+    if (dictionary == nil) { return nil; }
 
+    self = [self init];
     if (self) { [self updateWithDictionary:dictionary]; }
-    
     return self;
+}
+
++ (id)weatherWithDictionary:(NSDictionary *)dictionary {
+
+    return [[FIOWeather alloc] initWithDictionary:dictionary];
 }
 
 - (void)updateWithDictionary:(NSDictionary*)dictionary {
 
-    if ([dictionary objectForKey:FIOWeatherCurrentlyKey]) {
-        self.currentWeather = [[FIOHourDataPoint alloc] initWithDictionary:[dictionary objectForKey:FIOWeatherCurrentlyKey]];
-    }
-
-    if ([dictionary objectForKey:FIOWeatherMinutelyKey]) {
-        self.minutelyForecast = [[FIOMinutelyForecast alloc] initWithDictionary:[dictionary objectForKey:FIOWeatherMinutelyKey]];
-    }
-
-    if ([dictionary objectForKey:FIOWeatherHourlyKey]) {
-        self.hourlyForecast = [[FIOHourlyForecast alloc] initWithDictionary:[dictionary objectForKey:FIOWeatherHourlyKey]];
-    }
-
-    if ([dictionary objectForKey:FIOWeatherDailyKey]) {
-        self.dailyForecast = [[FIODailyForecast alloc] initWithDictionary:[dictionary objectForKey:FIOWeatherDailyKey]];
-    }
+    self.currentWeather = [FIOHourDataPoint pointWithDictionary:dictionary[FIOWeatherCurrentlyKey]];
+    self.minutelyForecast = [FIOMinutelyForecast forecastWithDictionary:dictionary[FIOWeatherMinutelyKey]];
+    self.hourlyForecast = [FIOHourlyForecast forecastWithDictionary:dictionary[FIOWeatherHourlyKey]];
+    self.dailyForecast = [FIODailyForecast forecastWithDictionary:dictionary[FIOWeatherDailyKey]] ;
 }
 
 @end

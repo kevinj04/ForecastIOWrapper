@@ -36,13 +36,6 @@ NSString *const FIOHourDataPointOzoneKey = @"ozone";
     return [[FIOHourDataPoint alloc] initWithDictionary:dictionary];
 }
 
-- (id)initWithDictionary:(NSDictionary *)dictionary {
-
-    self = [self init];
-    [self updateWithDictionary:dictionary];
-    return self;
-}
-
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
 
     self.summary = dictionary[FIOHourDataPointSummaryKey];

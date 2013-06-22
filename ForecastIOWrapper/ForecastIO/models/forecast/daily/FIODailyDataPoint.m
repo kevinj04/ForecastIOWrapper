@@ -36,13 +36,6 @@ NSString *const FIODailyDataPointOzoneKey = @"ozone";
     return self;
 }
 
-- (id)initWithDictionary:(NSDictionary *)dictionary {
-
-    self = [self init];
-    if (self) { [self updateWithDictionary:dictionary]; }
-    return self;
-}
-
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
     
     self.summary = dictionary[FIODailyDataPointSummaryKey];

@@ -20,15 +20,7 @@ NSString *const FIOMinuteDataPointPrecipitationIntensityKey = @"precipIntensity"
     return self;
 }
 
-- (id)initWithDictionary:(NSDictionary *)dictionary {
-
-    self = [self init];
-    if (self) { [self updateWithDictionary:dictionary]; }
-    return self;
-}
-
 + (id)pointWithDictionary:(NSDictionary *)dictionary {
-
     return [[FIOMinuteDataPoint alloc] initWithDictionary:dictionary];
 }
 

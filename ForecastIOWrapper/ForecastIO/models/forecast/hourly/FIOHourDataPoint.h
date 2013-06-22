@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FIOForecastDataPoint.h"
 
 extern NSString *const FIOHourDataPointSummaryKey;
 extern NSString *const FIOHourDataPointIconKey;
@@ -22,7 +23,7 @@ extern NSString *const FIOHourDataPointPressureKey;
 extern NSString *const FIOHourDataPointVisibilityKey;
 extern NSString *const FIOHourDataPointOzoneKey;
 
-@interface FIOHourDataPoint : NSObject
+@interface FIOHourDataPoint : FIOForecastDataPoint
 
 @property (strong, nonatomic) NSString *summary;
 @property (strong, nonatomic) NSString *icon;
@@ -37,9 +38,5 @@ extern NSString *const FIOHourDataPointOzoneKey;
 @property (assign, nonatomic) CGFloat pressure;
 @property (assign, nonatomic) CGFloat visibility;
 @property (assign, nonatomic) CGFloat ozone;
-
-- (id)initWithDictionary:(NSDictionary *)dictionary;
-+ (id)pointWithDictionary:(NSDictionary *)dictionary;
-- (void)updateWithDictionary:(NSDictionary *)dictionary;
 
 @end

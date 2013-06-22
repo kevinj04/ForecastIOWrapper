@@ -14,6 +14,7 @@ describe(@"FIODailyForecast", ^{
         subjectAction(^{
             forecast = [FIODailyForecast forecastWithDictionary:dictionary];
         });
+
         describe(@"with a dictionary with a data points entry", ^{
             beforeEach(^{
                 dictionary = @{FIOForecastDataKey:@[@{},@{}]};

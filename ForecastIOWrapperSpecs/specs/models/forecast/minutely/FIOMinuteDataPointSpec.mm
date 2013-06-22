@@ -21,11 +21,8 @@ describe(@"FIOMinuteDataPoint", ^{
         describe(@"with a dictionary", ^{
 
             describe(@"that is nil", ^{
-                it(@"should set the time to 1/1/1970", ^{
-                    dataPoint.time should equal([NSDate dateWithTimeIntervalSince1970:0]);
-                });
-                it(@"should set the precipitation value to 0", ^{
-                    dataPoint.precipitationIntensity should equal(0);
+                it(@"should not initialize and return nil", ^{
+                    dataPoint == nil should be_truthy;
                 });
             });
 

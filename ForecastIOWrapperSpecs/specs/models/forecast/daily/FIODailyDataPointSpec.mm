@@ -8,10 +8,6 @@ SPEC_BEGIN(FIODailyDataPointSpec)
 describe(@"FIODailyDataPoint", ^{
     __block FIODailyDataPoint *dataPoint;
 
-    beforeEach(^{
-
-    });
-
     describe(@"initWithDictionary:", ^{
         __block NSDictionary *dictionary;
         subjectAction(^{
@@ -21,59 +17,11 @@ describe(@"FIODailyDataPoint", ^{
         describe(@"with a dictionary", ^{
 
             describe(@"that is nil", ^{
-                it(@"should not set the summary string", ^{
-                    dataPoint.summary == nil should be_truthy;
+                beforeEach(^{
+                    dictionary = nil;
                 });
-                it(@"should not set the icon string", ^{
-                    dataPoint.icon == nil should be_truthy;
-                });
-                it(@"should set the time to 1/1/1970", ^{
-                    dataPoint.time should equal([NSDate dateWithTimeIntervalSince1970:0]);
-                });
-                it(@"should set the sunrise time to 1/1/1970", ^{
-                    dataPoint.sunriseTime should equal([NSDate dateWithTimeIntervalSince1970:0]);
-                });
-                it(@"should set the sunset time to 1/1/1970", ^{
-                    dataPoint.sunsetTime should equal([NSDate dateWithTimeIntervalSince1970:0]);
-                });
-                it(@"should set the temperature max time to 1/1/1970", ^{
-                    dataPoint.temperatureMaxTime should equal([NSDate dateWithTimeIntervalSince1970:0]);
-                });
-                it(@"should set the temperature min time to 1/1/1970", ^{
-                    dataPoint.temperatureMinTime should equal([NSDate dateWithTimeIntervalSince1970:0]);
-                });
-                it(@"should set the precipitation value to 0", ^{
-                    dataPoint.precipitationIntensity should equal(0);
-                });
-                it(@"should set the precipitation max value to 0", ^{
-                    dataPoint.precipitationIntensityMax should equal(0);
-                });
-                it(@"should set the temperature min value to 0", ^{
-                    dataPoint.temperatureMin should equal(0);
-                });
-                it(@"should set the temperature max value to 0", ^{
-                    dataPoint.temperatureMax should equal(0);
-                });
-                it(@"should set the dew point value to 0", ^{
-                    dataPoint.dewPoint should equal(0);
-                });
-                it(@"should set the wind speed value to 0", ^{
-                    dataPoint.windSpeed should equal(0);
-                });
-                it(@"should set the wind bearing value to 0", ^{
-                    dataPoint.windBearing should equal(0);
-                });
-                it(@"should set the cloud cover value to 0", ^{
-                    dataPoint.cloudCover should equal(0);
-                });
-                it(@"should set the humidity value to 0", ^{
-                    dataPoint.humidity should equal(0);
-                });
-                it(@"should set the pressure value to 0", ^{
-                    dataPoint.pressure should equal(0);
-                });
-                it(@"should set the ozone value to 0", ^{
-                    dataPoint.ozone should equal(0);
+                it(@"should not initialize and return nil", ^{
+                    dataPoint == nil should be_truthy;
                 });
             });
 

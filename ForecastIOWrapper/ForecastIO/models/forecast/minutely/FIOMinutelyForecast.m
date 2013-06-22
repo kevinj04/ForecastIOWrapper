@@ -17,7 +17,7 @@
     NSMutableArray *newDataPoints = [NSMutableArray array];
     for (NSDictionary *dataPointDictionary in array) {
 
-        FIOMinuteDataPoint *dataPoint = [[FIOMinuteDataPoint alloc] initWithDictionary:dataPointDictionary];
+        FIOMinuteDataPoint *dataPoint = [FIOMinuteDataPoint pointWithDictionary:dataPointDictionary];
         [newDataPoints addObject:dataPoint];
     }
     self.dataPoints = newDataPoints;

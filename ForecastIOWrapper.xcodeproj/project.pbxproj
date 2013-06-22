@@ -28,6 +28,8 @@
 		47E0999517762C5600C2A6EF /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
 		47E09997177638B800C2A6EF /* FIOHourDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */; };
 		47EC2220177640B000D84C5E /* FIOHourlyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */; };
+		47EC22221776443600D84C5E /* FIODailyDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC22211776443600D84C5E /* FIODailyDataPointSpec.mm */; };
+		47EC22241776470C00D84C5E /* FIODailyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC22231776470C00D84C5E /* FIODailyForecastSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +79,8 @@
 		47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinuteDataPointSpec.mm; sourceTree = "<group>"; };
 		47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOHourDataPointSpec.mm; sourceTree = "<group>"; };
 		47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOHourlyForecastSpec.mm; sourceTree = "<group>"; };
+		47EC22211776443600D84C5E /* FIODailyDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIODailyDataPointSpec.mm; sourceTree = "<group>"; };
+		47EC22231776470C00D84C5E /* FIODailyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIODailyForecastSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,8 @@
 		47E0998B1776270B00C2A6EF /* daily */ = {
 			isa = PBXGroup;
 			children = (
+				47EC22211776443600D84C5E /* FIODailyDataPointSpec.mm */,
+				47EC22231776470C00D84C5E /* FIODailyForecastSpec.mm */,
 			);
 			path = daily;
 			sourceTree = "<group>";
@@ -388,6 +394,8 @@
 				47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */,
 				47E09997177638B800C2A6EF /* FIOHourDataPointSpec.mm in Sources */,
 				47EC2220177640B000D84C5E /* FIOHourlyForecastSpec.mm in Sources */,
+				47EC22221776443600D84C5E /* FIODailyDataPointSpec.mm in Sources */,
+				47EC22241776470C00D84C5E /* FIODailyForecastSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

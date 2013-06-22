@@ -1,18 +1,18 @@
-#import "FIOHourlyForecast.h"
-#import "FIOHourDataPoint.h"
+#import "FIODailyForecast.h"
+#import "FIODailyDataPoint.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
-SPEC_BEGIN(FIOHourlyForecastSpec)
+SPEC_BEGIN(FIODailyForecastSpec)
 
-describe(@"FIOHourlyForecast", ^{
-    __block FIOHourlyForecast *forecast;
+describe(@"FIODailyForecast", ^{
+    __block FIODailyForecast *forecast;
     __block NSDictionary *dictionary;
 
     describe(@"updateDataPointsWithArray:", ^{
         subjectAction(^{
-            forecast = [FIOHourlyForecast forecastWithDictionary:dictionary];
+            forecast = [FIODailyForecast forecastWithDictionary:dictionary];
         });
         describe(@"with a dictionary with a data points entry", ^{
             beforeEach(^{
@@ -22,7 +22,7 @@ describe(@"FIOHourlyForecast", ^{
                 forecast.dataPoints.count should equal([dictionary[FIOForecastDataKey] count]);
             });
             it(@"should create entries of type FIOMinuteDataPoint", ^{
-                [forecast.dataPoints[0] isKindOfClass:[FIOHourDataPoint class]] should be_truthy;
+                [forecast.dataPoints[0] isKindOfClass:[FIODailyDataPoint class]] should be_truthy;
             });
         });
     });

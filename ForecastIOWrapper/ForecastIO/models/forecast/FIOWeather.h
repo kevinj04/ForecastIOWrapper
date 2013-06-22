@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class FIOHourDataPoint;
-@class FIOMinutelyForecast;
-@class FIOHourlyForecast;
-@class FIODailyForecast;
+#import "FIOMinutelyForecast.h"
+#import "FIOHourDataPoint.h"
+#import "FIOHourlyForecast.h"
+#import "FIODailyForecast.h"
 
 extern NSString *const FIOWeatherUpdateSuccess;
 extern NSString *const FIOWeatherUpdateInProgress;

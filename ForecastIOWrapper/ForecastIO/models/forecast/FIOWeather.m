@@ -7,10 +7,6 @@
 //
 
 #import "FIOWeather.h"
-#import "FIOMinutelyForecast.h"
-#import "FIOHourDataPoint.h"
-#import "FIOHourlyForecast.h"
-#import "FIODailyForecast.h"
 
 #pragma mark - ForecastIO Keys
 NSString *const FIOWeatherCurrentlyKey = @"currently";

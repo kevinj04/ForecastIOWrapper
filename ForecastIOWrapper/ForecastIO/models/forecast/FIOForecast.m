@@ -17,33 +17,26 @@ NSString *const FIOForecastDataKey = @"data";
 #pragma mark - Initialization
 - (id)init {
 
-    self = [[super class] init];
+    self = [super init];
     return self;
 }
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
 
-    self = [FIOForecast init];
-
+    self = [self init];
     if (self) { [self updateWithDictionary:dictionary]; }
-
     return self;
+}
+
++ (id)forecastWithDictionary:(NSDictionary *)dictionary {
+    return [[FIOForecast alloc] initWithDictionary:dictionary];
 }
 
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
 
-    if ([dictionary objectForKey:FIOForecastSummaryKey]) {
-        self.summary = [dictionary objectForKey:FIOForecastSummaryKey];
-    }
-
-    if ([dictionary objectForKey:FIOForecastIconKey]) {
-        self.icon = [dictionary objectForKey:FIOForecastIconKey];
-    }
-
-    if ([dictionary objectForKey:FIOForecastDataKey]) {
-        [self updateDataPointsWithArray:[dictionary objectForKey:FIOForecastDataKey]];
-    }
-    
+    self.summary = dictionary[FIOForecastSummaryKey];
+    self.icon = dictionary[FIOForecastIconKey];
+    [self updateDataPointsWithArray:dictionary[FIOForecastDataKey]];
 }
 
 - (void)updateDataPointsWithArray:(NSArray *)array {

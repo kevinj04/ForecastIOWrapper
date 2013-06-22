@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		47E09887177611B600C2A6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
-		47E09896177611B600C2A6EF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09895177611B600C2A6EF /* SenTestingKit.framework */; };
-		47E09898177611B600C2A6EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09897177611B600C2A6EF /* UIKit.framework */; };
-		47E09899177611B600C2A6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
-		47E0989C177611B600C2A6EF /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
-		47E098A2177611B600C2A6EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47E098A0177611B600C2A6EF /* InfoPlist.strings */; };
-		47E098A5177611B600C2A6EF /* ForecastIOWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E098A4177611B600C2A6EF /* ForecastIOWrapperTests.m */; };
 		47E09966177618E200C2A6EF /* FIOAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09950177618E200C2A6EF /* FIOAPI.m */; };
 		47E09967177618E200C2A6EF /* FIODailyDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09955177618E200C2A6EF /* FIODailyDataPoint.m */; };
 		47E09968177618E200C2A6EF /* FIODailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09957177618E200C2A6EF /* FIODailyForecast.m */; };
@@ -23,17 +17,16 @@
 		47E0996C177618E200C2A6EF /* FIOHourlyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09960177618E200C2A6EF /* FIOHourlyForecast.m */; };
 		47E0996D177618E200C2A6EF /* FIOMinuteDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09963177618E200C2A6EF /* FIOMinuteDataPoint.m */; };
 		47E0996E177618E200C2A6EF /* FIOMinutelyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09965177618E200C2A6EF /* FIOMinutelyForecast.m */; };
+		47E09974177625A300C2A6EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09897177611B600C2A6EF /* UIKit.framework */; };
+		47E09975177625A300C2A6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
+		47E09977177625A300C2A6EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09976177625A300C2A6EF /* CoreGraphics.framework */; };
+		47E0997D177625A300C2A6EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47E0997B177625A300C2A6EF /* InfoPlist.strings */; };
+		47E0997F177625A300C2A6EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0997E177625A300C2A6EF /* main.m */; };
+		47E09982177625A400C2A6EF /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09981177625A400C2A6EF /* Cedar-iOS.framework */; };
+		47E0999117762B5000C2A6EF /* FIOMinutelyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E0999017762B5000C2A6EF /* FIOMinutelyForecastSpec.mm */; };
+		47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */; };
+		47E0999517762C5600C2A6EF /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		47E0989A177611B600C2A6EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 47E0987B177611B600C2A6EF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 47E09882177611B600C2A6EF;
-			remoteInfo = ForecastIOWrapper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		47E09881177611B600C2A6EF /* CopyFiles */ = {
@@ -51,13 +44,8 @@
 		47E09883177611B600C2A6EF /* libForecastIOWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libForecastIOWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E09886177611B600C2A6EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47E0988A177611B600C2A6EF /* ForecastIOWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForecastIOWrapper-Prefix.pch"; sourceTree = "<group>"; };
-		47E09894177611B600C2A6EF /* ForecastIOWrapperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastIOWrapperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E09895177611B600C2A6EF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		47E09897177611B600C2A6EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		47E0989F177611B600C2A6EF /* ForecastIOWrapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForecastIOWrapperTests-Info.plist"; sourceTree = "<group>"; };
-		47E098A1177611B600C2A6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		47E098A3177611B600C2A6EF /* ForecastIOWrapperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastIOWrapperTests.h; sourceTree = "<group>"; };
-		47E098A4177611B600C2A6EF /* ForecastIOWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastIOWrapperTests.m; sourceTree = "<group>"; };
 		47E0994F177618E200C2A6EF /* FIOAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOAPI.h; sourceTree = "<group>"; };
 		47E09950177618E200C2A6EF /* FIOAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOAPI.m; sourceTree = "<group>"; };
 		47E09954177618E200C2A6EF /* FIODailyDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIODailyDataPoint.h; sourceTree = "<group>"; };
@@ -76,6 +64,15 @@
 		47E09963177618E200C2A6EF /* FIOMinuteDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOMinuteDataPoint.m; sourceTree = "<group>"; };
 		47E09964177618E200C2A6EF /* FIOMinutelyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIOMinutelyForecast.h; sourceTree = "<group>"; };
 		47E09965177618E200C2A6EF /* FIOMinutelyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIOMinutelyForecast.m; sourceTree = "<group>"; };
+		47E09973177625A300C2A6EF /* ForecastIOWrapperSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForecastIOWrapperSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E09976177625A300C2A6EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		47E0997A177625A300C2A6EF /* ForecastIOWrapperSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForecastIOWrapperSpecs-Info.plist"; sourceTree = "<group>"; };
+		47E0997C177625A300C2A6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47E0997E177625A300C2A6EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47E09980177625A300C2A6EF /* ForecastIOWrapperSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForecastIOWrapperSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		47E09981177625A400C2A6EF /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		47E0999017762B5000C2A6EF /* FIOMinutelyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinutelyForecastSpec.mm; sourceTree = "<group>"; };
+		47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinuteDataPointSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +84,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47E09890177611B600C2A6EF /* Frameworks */ = {
+		47E09970177625A300C2A6EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E09896177611B600C2A6EF /* SenTestingKit.framework in Frameworks */,
-				47E09898177611B600C2A6EF /* UIKit.framework in Frameworks */,
-				47E09899177611B600C2A6EF /* Foundation.framework in Frameworks */,
-				47E0989C177611B600C2A6EF /* libForecastIOWrapper.a in Frameworks */,
+				47E0999517762C5600C2A6EF /* libForecastIOWrapper.a in Frameworks */,
+				47E09974177625A300C2A6EF /* UIKit.framework in Frameworks */,
+				47E09975177625A300C2A6EF /* Foundation.framework in Frameworks */,
+				47E09977177625A300C2A6EF /* CoreGraphics.framework in Frameworks */,
+				47E09982177625A400C2A6EF /* Cedar-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				47E09888177611B600C2A6EF /* ForecastIOWrapper */,
-				47E0989D177611B600C2A6EF /* ForecastIOWrapperTests */,
+				47E09978177625A300C2A6EF /* ForecastIOWrapperSpecs */,
 				47E09885177611B600C2A6EF /* Frameworks */,
 				47E09884177611B600C2A6EF /* Products */,
 			);
@@ -115,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				47E09883177611B600C2A6EF /* libForecastIOWrapper.a */,
-				47E09894177611B600C2A6EF /* ForecastIOWrapperTests.octest */,
+				47E09973177625A300C2A6EF /* ForecastIOWrapperSpecs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +124,7 @@
 				47E09886177611B600C2A6EF /* Foundation.framework */,
 				47E09895177611B600C2A6EF /* SenTestingKit.framework */,
 				47E09897177611B600C2A6EF /* UIKit.framework */,
+				47E09976177625A300C2A6EF /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,25 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				47E0988A177611B600C2A6EF /* ForecastIOWrapper-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		47E0989D177611B600C2A6EF /* ForecastIOWrapperTests */ = {
-			isa = PBXGroup;
-			children = (
-				47E098A3177611B600C2A6EF /* ForecastIOWrapperTests.h */,
-				47E098A4177611B600C2A6EF /* ForecastIOWrapperTests.m */,
-				47E0989E177611B600C2A6EF /* Supporting Files */,
-			);
-			path = ForecastIOWrapperTests;
-			sourceTree = "<group>";
-		};
-		47E0989E177611B600C2A6EF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				47E0989F177611B600C2A6EF /* ForecastIOWrapperTests-Info.plist */,
-				47E098A0177611B600C2A6EF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +211,76 @@
 			path = minutely;
 			sourceTree = "<group>";
 		};
+		47E09978177625A300C2A6EF /* ForecastIOWrapperSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				47E099881776270B00C2A6EF /* specs */,
+				47E09981177625A400C2A6EF /* Cedar-iOS.framework */,
+				47E09979177625A300C2A6EF /* Supporting Files */,
+			);
+			path = ForecastIOWrapperSpecs;
+			sourceTree = "<group>";
+		};
+		47E09979177625A300C2A6EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47E0997A177625A300C2A6EF /* ForecastIOWrapperSpecs-Info.plist */,
+				47E0997B177625A300C2A6EF /* InfoPlist.strings */,
+				47E0997E177625A300C2A6EF /* main.m */,
+				47E09980177625A300C2A6EF /* ForecastIOWrapperSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47E099881776270B00C2A6EF /* specs */ = {
+			isa = PBXGroup;
+			children = (
+				47E099891776270B00C2A6EF /* models */,
+			);
+			path = specs;
+			sourceTree = "<group>";
+		};
+		47E099891776270B00C2A6EF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				47E0998A1776270B00C2A6EF /* forecast */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		47E0998A1776270B00C2A6EF /* forecast */ = {
+			isa = PBXGroup;
+			children = (
+				47E0998B1776270B00C2A6EF /* daily */,
+				47E0998C1776270B00C2A6EF /* hourly */,
+				47E0998D1776270B00C2A6EF /* minutely */,
+			);
+			path = forecast;
+			sourceTree = "<group>";
+		};
+		47E0998B1776270B00C2A6EF /* daily */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = daily;
+			sourceTree = "<group>";
+		};
+		47E0998C1776270B00C2A6EF /* hourly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hourly;
+			sourceTree = "<group>";
+		};
+		47E0998D1776270B00C2A6EF /* minutely */ = {
+			isa = PBXGroup;
+			children = (
+				47E0999017762B5000C2A6EF /* FIOMinutelyForecastSpec.mm */,
+				47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */,
+			);
+			path = minutely;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,24 +301,22 @@
 			productReference = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		47E09893177611B600C2A6EF /* ForecastIOWrapperTests */ = {
+		47E09972177625A300C2A6EF /* ForecastIOWrapperSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47E098AB177611B600C2A6EF /* Build configuration list for PBXNativeTarget "ForecastIOWrapperTests" */;
+			buildConfigurationList = 47E09985177625A400C2A6EF /* Build configuration list for PBXNativeTarget "ForecastIOWrapperSpecs" */;
 			buildPhases = (
-				47E0988F177611B600C2A6EF /* Sources */,
-				47E09890177611B600C2A6EF /* Frameworks */,
-				47E09891177611B600C2A6EF /* Resources */,
-				47E09892177611B600C2A6EF /* ShellScript */,
+				47E0996F177625A300C2A6EF /* Sources */,
+				47E09970177625A300C2A6EF /* Frameworks */,
+				47E09971177625A300C2A6EF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				47E0989B177611B600C2A6EF /* PBXTargetDependency */,
 			);
-			name = ForecastIOWrapperTests;
-			productName = ForecastIOWrapperTests;
-			productReference = 47E09894177611B600C2A6EF /* ForecastIOWrapperTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			name = ForecastIOWrapperSpecs;
+			productName = ForecastIOWrapperSpecs;
+			productReference = 47E09973177625A300C2A6EF /* ForecastIOWrapperSpecs.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -292,37 +340,21 @@
 			projectRoot = "";
 			targets = (
 				47E09882177611B600C2A6EF /* ForecastIOWrapper */,
-				47E09893177611B600C2A6EF /* ForecastIOWrapperTests */,
+				47E09972177625A300C2A6EF /* ForecastIOWrapperSpecs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		47E09891177611B600C2A6EF /* Resources */ = {
+		47E09971177625A300C2A6EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E098A2177611B600C2A6EF /* InfoPlist.strings in Resources */,
+				47E0997D177625A300C2A6EF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		47E09892177611B600C2A6EF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47E0987F177611B600C2A6EF /* Sources */ = {
@@ -341,29 +373,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47E0988F177611B600C2A6EF /* Sources */ = {
+		47E0996F177625A300C2A6EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E098A5177611B600C2A6EF /* ForecastIOWrapperTests.m in Sources */,
+				47E0997F177625A300C2A6EF /* main.m in Sources */,
+				47E0999117762B5000C2A6EF /* FIOMinutelyForecastSpec.mm in Sources */,
+				47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		47E0989B177611B600C2A6EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 47E09882177611B600C2A6EF /* ForecastIOWrapper */;
-			targetProxy = 47E0989A177611B600C2A6EF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		47E098A0177611B600C2A6EF /* InfoPlist.strings */ = {
+		47E0997B177625A300C2A6EF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				47E098A1177611B600C2A6EF /* en */,
+				47E0997C177625A300C2A6EF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -448,33 +474,48 @@
 			};
 			name = Release;
 		};
-		47E098AC177611B600C2A6EF /* Debug */ = {
+		47E09986177625A400C2A6EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/ForecastIOWrapperSpecs/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ForecastIOWrapper/ForecastIOWrapper-Prefix.pch";
-				INFOPLIST_FILE = "ForecastIOWrapperTests/ForecastIOWrapperTests-Info.plist";
+				GCC_PREFIX_HEADER = "ForecastIOWrapperSpecs/ForecastIOWrapperSpecs-Prefix.pch";
+				INFOPLIST_FILE = "ForecastIOWrapperSpecs/ForecastIOWrapperSpecs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		47E098AD177611B600C2A6EF /* Release */ = {
+		47E09987177625A400C2A6EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/ForecastIOWrapperSpecs/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ForecastIOWrapper/ForecastIOWrapper-Prefix.pch";
-				INFOPLIST_FILE = "ForecastIOWrapperTests/ForecastIOWrapperTests-Info.plist";
+				GCC_PREFIX_HEADER = "ForecastIOWrapperSpecs/ForecastIOWrapperSpecs-Prefix.pch";
+				INFOPLIST_FILE = "ForecastIOWrapperSpecs/ForecastIOWrapperSpecs-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -498,11 +539,11 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		47E098AB177611B600C2A6EF /* Build configuration list for PBXNativeTarget "ForecastIOWrapperTests" */ = {
+		47E09985177625A400C2A6EF /* Build configuration list for PBXNativeTarget "ForecastIOWrapperSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47E098AC177611B600C2A6EF /* Debug */,
-				47E098AD177611B600C2A6EF /* Release */,
+				47E09986177625A400C2A6EF /* Debug */,
+				47E09987177625A400C2A6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

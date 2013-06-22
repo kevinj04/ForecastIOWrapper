@@ -1,5 +1,5 @@
 //
-//  WBSForecastIOWeatherModel.h
+//  FIOWeatherModel.h
 //  FIOWrapper
 //
 //  Created by Kevin Jenkins on 6/9/13.

@@ -8,26 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const ForecastIOSummaryKey;
-extern NSString *const ForecastIOIconKey;
-extern NSString *const ForecastIOTimeKey;
-extern NSString *const ForecastIOPrecipIntensityKey;
-extern NSString *const ForecastIOTemperatureKey;
-extern NSString *const ForecastIODewPointKey;
-extern NSString *const ForecastIOWindSpeedKey;
-extern NSString *const ForecastIOWindBearingKey;
-extern NSString *const ForecastIOCloudCoverKey;
-extern NSString *const ForecastIOHumidityKey;
-extern NSString *const ForecastIOPressureKey;
-extern NSString *const ForecastIOVisibilityKey;
-extern NSString *const ForecastIOOzoneKey;
+extern NSString *const FIOHourDataPointSummaryKey;
+extern NSString *const FIOHourDataPointIconKey;
+extern NSString *const FIOHourDataPointTimeKey;
+extern NSString *const FIOHourDataPointPrecipIntensityKey;
+extern NSString *const FIOHourDataPointTemperatureKey;
+extern NSString *const FIOHourDataPointDewPointKey;
+extern NSString *const FIOHourDataPointWindSpeedKey;
+extern NSString *const FIOHourDataPointWindBearingKey;
+extern NSString *const FIOHourDataPointCloudCoverKey;
+extern NSString *const FIOHourDataPointHumidityKey;
+extern NSString *const FIOHourDataPointPressureKey;
+extern NSString *const FIOHourDataPointVisibilityKey;
+extern NSString *const FIOHourDataPointOzoneKey;
 
 @interface FIOHourDataPoint : NSObject
 
 @property (strong, nonatomic) NSString *summary;
 @property (strong, nonatomic) NSString *icon;
 @property (strong, nonatomic) NSDate *time;
-@property (assign, nonatomic) CGFloat precipIntensity;
+@property (assign, nonatomic) CGFloat precipitationIntensity;
 @property (assign, nonatomic) CGFloat temperature;
 @property (assign, nonatomic) CGFloat dewPoint;
 @property (assign, nonatomic) CGFloat windSpeed;

@@ -34,7 +34,7 @@ describe(@"FIOMinuteDataPoint", ^{
                 beforeEach(^{
                     time = floor([[NSDate date] timeIntervalSince1970]);
                     NSString *dateAsTimeSinceString = [NSString stringWithFormat:@"%0.0f",time];
-                    dictionary = @{@"time":dateAsTimeSinceString};
+                    dictionary = @{FIOMinuteDataPointTimeKey:dateAsTimeSinceString};
                 });
                 it(@"should set the time", ^{
                     dataPoint.time.timeIntervalSince1970 should equal(time);

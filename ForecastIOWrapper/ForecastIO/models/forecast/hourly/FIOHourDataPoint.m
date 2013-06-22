@@ -8,26 +8,26 @@
 
 #import "FIOHourDataPoint.h"
 
-NSString *const ForecastIOSummaryKey = @"summary";
-NSString *const ForecastIOIconKey = @"icon";
-NSString *const ForecastIOTimeKey = @"time";
-NSString *const ForecastIOPrecipIntensityKey = @"precipIntensity";
-NSString *const ForecastIOTemperatureKey = @"temperature";
-NSString *const ForecastIODewPointKey = @"dewPoint";
-NSString *const ForecastIOWindSpeedKey = @"windSpeed";
-NSString *const ForecastIOWindBearingKey = @"windBearing";
-NSString *const ForecastIOCloudCoverKey = @"cloudCover";
-NSString *const ForecastIOHumidityKey = @"humidity";
-NSString *const ForecastIOPressureKey = @"pressure";
-NSString *const ForecastIOVisibilityKey = @"visibility";
-NSString *const ForecastIOOzoneKey = @"ozone";
+NSString *const FIOHourDataPointSummaryKey = @"summary";
+NSString *const FIOHourDataPointIconKey = @"icon";
+NSString *const FIOHourDataPointTimeKey = @"time";
+NSString *const FIOHourDataPointPrecipIntensityKey = @"precipIntensity";
+NSString *const FIOHourDataPointTemperatureKey = @"temperature";
+NSString *const FIOHourDataPointDewPointKey = @"dewPoint";
+NSString *const FIOHourDataPointWindSpeedKey = @"windSpeed";
+NSString *const FIOHourDataPointWindBearingKey = @"windBearing";
+NSString *const FIOHourDataPointCloudCoverKey = @"cloudCover";
+NSString *const FIOHourDataPointHumidityKey = @"humidity";
+NSString *const FIOHourDataPointPressureKey = @"pressure";
+NSString *const FIOHourDataPointVisibilityKey = @"visibility";
+NSString *const FIOHourDataPointOzoneKey = @"ozone";
 
 @implementation FIOHourDataPoint
 
 #pragma mark - Initialization
 - (id)init {
 
-    self = [[self class] init];
+    self = [super init];
     return self;
 }
 
@@ -38,26 +38,26 @@ NSString *const ForecastIOOzoneKey = @"ozone";
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
 
-    self = [FIOHourDataPoint init];
+    self = [self init];
     [self updateWithDictionary:dictionary];
     return self;
 }
 
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
 
-    self.summary = dictionary[ForecastIOSummaryKey];
-    self.icon = dictionary[ForecastIOIconKey];
-    self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[ForecastIOTimeKey] integerValue]];
-    self.precipIntensity = [dictionary[ForecastIOPrecipIntensityKey] floatValue];
-    self.temperature = [dictionary[ForecastIOTemperatureKey] floatValue];
-    self.dewPoint = [dictionary[ForecastIODewPointKey] floatValue];
-    self.windSpeed = [dictionary[ForecastIOWindSpeedKey] floatValue];
-    self.windBearing = [dictionary[ForecastIOWindBearingKey] floatValue];
-    self.cloudCover = [dictionary[ForecastIOCloudCoverKey] floatValue];
-    self.humidity = [dictionary[ForecastIOHumidityKey] floatValue];
-    self.pressure = [dictionary[ForecastIOPressureKey] floatValue];
-    self.visibility = [dictionary[ForecastIOVisibilityKey] floatValue];
-    self.ozone = [dictionary[ForecastIOOzoneKey] floatValue];
+    self.summary = dictionary[FIOHourDataPointSummaryKey];
+    self.icon = dictionary[FIOHourDataPointIconKey];
+    self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[FIOHourDataPointTimeKey] integerValue]];
+    self.precipitationIntensity = [dictionary[FIOHourDataPointPrecipIntensityKey] floatValue];
+    self.temperature = [dictionary[FIOHourDataPointTemperatureKey] floatValue];
+    self.dewPoint = [dictionary[FIOHourDataPointDewPointKey] floatValue];
+    self.windSpeed = [dictionary[FIOHourDataPointWindSpeedKey] floatValue];
+    self.windBearing = [dictionary[FIOHourDataPointWindBearingKey] floatValue];
+    self.cloudCover = [dictionary[FIOHourDataPointCloudCoverKey] floatValue];
+    self.humidity = [dictionary[FIOHourDataPointHumidityKey] floatValue];
+    self.pressure = [dictionary[FIOHourDataPointPressureKey] floatValue];
+    self.visibility = [dictionary[FIOHourDataPointVisibilityKey] floatValue];
+    self.ozone = [dictionary[FIOHourDataPointOzoneKey] floatValue];
 }
 
 @end

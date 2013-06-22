@@ -27,6 +27,7 @@
 		47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */; };
 		47E0999517762C5600C2A6EF /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
 		47E09997177638B800C2A6EF /* FIOHourDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */; };
+		47EC2220177640B000D84C5E /* FIOHourlyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		47E0999017762B5000C2A6EF /* FIOMinutelyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinutelyForecastSpec.mm; sourceTree = "<group>"; };
 		47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinuteDataPointSpec.mm; sourceTree = "<group>"; };
 		47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOHourDataPointSpec.mm; sourceTree = "<group>"; };
+		47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOHourlyForecastSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */,
+				47EC221F177640B000D84C5E /* FIOHourlyForecastSpec.mm */,
 			);
 			path = hourly;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				47E0999117762B5000C2A6EF /* FIOMinutelyForecastSpec.mm in Sources */,
 				47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */,
 				47E09997177638B800C2A6EF /* FIOHourDataPointSpec.mm in Sources */,
+				47EC2220177640B000D84C5E /* FIOHourlyForecastSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +546,7 @@
 				47E098AA177611B600C2A6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47E09985177625A400C2A6EF /* Build configuration list for PBXNativeTarget "ForecastIOWrapperSpecs" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +555,7 @@
 				47E09987177625A400C2A6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

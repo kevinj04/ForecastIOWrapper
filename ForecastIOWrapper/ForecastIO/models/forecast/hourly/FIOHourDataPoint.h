@@ -8,6 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const ForecastIOSummaryKey;
+extern NSString *const ForecastIOIconKey;
+extern NSString *const ForecastIOTimeKey;
+extern NSString *const ForecastIOPrecipIntensityKey;
+extern NSString *const ForecastIOTemperatureKey;
+extern NSString *const ForecastIODewPointKey;
+extern NSString *const ForecastIOWindSpeedKey;
+extern NSString *const ForecastIOWindBearingKey;
+extern NSString *const ForecastIOCloudCoverKey;
+extern NSString *const ForecastIOHumidityKey;
+extern NSString *const ForecastIOPressureKey;
+extern NSString *const ForecastIOVisibilityKey;
+extern NSString *const ForecastIOOzoneKey;
+
 @interface FIOHourDataPoint : NSObject
 
 @property (strong, nonatomic) NSString *summary;
@@ -25,6 +39,7 @@
 @property (assign, nonatomic) CGFloat ozone;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
++ (id)pointWithDictionary:(NSDictionary *)dictionary;
 - (void)updateWithDictionary:(NSDictionary *)dictionary;
 
 @end

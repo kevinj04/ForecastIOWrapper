@@ -31,7 +31,13 @@ NSString *const ForecastIOOzoneKey = @"ozone";
     return self;
 }
 
++ (id)pointWithDictionary:(NSDictionary *)dictionary {
+
+    return [[FIOHourDataPoint alloc] initWithDictionary:dictionary];
+}
+
 - (id)initWithDictionary:(NSDictionary *)dictionary {
+
     self = [FIOHourDataPoint init];
     [self updateWithDictionary:dictionary];
     return self;
@@ -39,57 +45,19 @@ NSString *const ForecastIOOzoneKey = @"ozone";
 
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
 
-    if ([dictionary objectForKey:ForecastIOSummaryKey]) {
-        self.summary = [dictionary objectForKey:ForecastIOSummaryKey];
-    }
-
-    if ([dictionary objectForKey:ForecastIOIconKey]) {
-        self.icon = [dictionary objectForKey:ForecastIOIconKey];
-    }
-
-    if ([dictionary objectForKey:ForecastIOTimeKey]) {
-        self.time = [NSDate dateWithTimeIntervalSince1970:[[dictionary objectForKey:ForecastIOTimeKey] integerValue]];
-    }
-
-    if ([dictionary objectForKey:ForecastIOPrecipIntensityKey]) {
-        self.precipIntensity = [[dictionary objectForKey:ForecastIOPrecipIntensityKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOTemperatureKey]) {
-        self.temperature = [[dictionary objectForKey:ForecastIOTemperatureKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIODewPointKey]) {
-        self.dewPoint = [[dictionary objectForKey:ForecastIODewPointKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOWindSpeedKey]) {
-        self.windSpeed = [[dictionary objectForKey:ForecastIOWindSpeedKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOWindBearingKey]) {
-        self.windBearing = [[dictionary objectForKey:ForecastIOWindBearingKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOCloudCoverKey]) {
-        self.cloudCover = [[dictionary objectForKey:ForecastIOCloudCoverKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOHumidityKey]) {
-        self.humidity = [[dictionary objectForKey:ForecastIOHumidityKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOPressureKey]) {
-        self.pressure = [[dictionary objectForKey:ForecastIOPressureKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOVisibilityKey]) {
-        self.visibility = [[dictionary objectForKey:ForecastIOVisibilityKey] floatValue];
-    }
-
-    if ([dictionary objectForKey:ForecastIOOzoneKey]) {
-        self.ozone = [[dictionary objectForKey:ForecastIOOzoneKey] floatValue];
-    }
+    self.summary = dictionary[ForecastIOSummaryKey];
+    self.icon = dictionary[ForecastIOIconKey];
+    self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[ForecastIOTimeKey] integerValue]];
+    self.precipIntensity = [dictionary[ForecastIOPrecipIntensityKey] floatValue];
+    self.temperature = [dictionary[ForecastIOTemperatureKey] floatValue];
+    self.dewPoint = [dictionary[ForecastIODewPointKey] floatValue];
+    self.windSpeed = [dictionary[ForecastIOWindSpeedKey] floatValue];
+    self.windBearing = [dictionary[ForecastIOWindBearingKey] floatValue];
+    self.cloudCover = [dictionary[ForecastIOCloudCoverKey] floatValue];
+    self.humidity = [dictionary[ForecastIOHumidityKey] floatValue];
+    self.pressure = [dictionary[ForecastIOPressureKey] floatValue];
+    self.visibility = [dictionary[ForecastIOVisibilityKey] floatValue];
+    self.ozone = [dictionary[ForecastIOOzoneKey] floatValue];
 }
 
 @end

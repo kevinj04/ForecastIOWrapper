@@ -26,6 +26,7 @@
 		47E0999117762B5000C2A6EF /* FIOMinutelyForecastSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E0999017762B5000C2A6EF /* FIOMinutelyForecastSpec.mm */; };
 		47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */; };
 		47E0999517762C5600C2A6EF /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
+		47E09997177638B800C2A6EF /* FIOHourDataPointSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		47E09981177625A400C2A6EF /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		47E0999017762B5000C2A6EF /* FIOMinutelyForecastSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinutelyForecastSpec.mm; sourceTree = "<group>"; };
 		47E0999217762BA100C2A6EF /* FIOMinuteDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOMinuteDataPointSpec.mm; sourceTree = "<group>"; };
+		47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIOHourDataPointSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 		47E0998C1776270B00C2A6EF /* hourly */ = {
 			isa = PBXGroup;
 			children = (
+				47E09996177638B800C2A6EF /* FIOHourDataPointSpec.mm */,
 			);
 			path = hourly;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				47E0997F177625A300C2A6EF /* main.m in Sources */,
 				47E0999117762B5000C2A6EF /* FIOMinutelyForecastSpec.mm in Sources */,
 				47E0999317762BA100C2A6EF /* FIOMinuteDataPointSpec.mm in Sources */,
+				47E09997177638B800C2A6EF /* FIOHourDataPointSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

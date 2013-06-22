@@ -8,36 +8,34 @@
 
 #import "FIOMinuteDataPoint.h"
 
-NSString *const FIOTimeKey = @"time";
-NSString *const FIOPrecipitationIntensityKey = @"precipIntensity";
+NSString *const FIOMinuteDataPointTimeKey = @"time";
+NSString *const FIOMinuteDataPointPrecipitationIntensityKey = @"precipIntensity";
 
 @implementation FIOMinuteDataPoint
 
 #pragma mark - Initialization
 - (id)init {
 
-    self = [[super class] init];
+    self = [super init];
     return self;
 }
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
 
-    self = [FIOMinuteDataPoint init];
-
+    self = [self init];
     if (self) { [self updateWithDictionary:dictionary]; }
-
     return self;
 }
 
++ (id)pointWithDictionary:(NSDictionary *)dictionary {
+
+    return [[FIOMinuteDataPoint alloc] initWithDictionary:dictionary];
+}
+
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
-
-    if ([dictionary objectForKey:FIOTimeKey]) {
-        self.time = [NSDate dateWithTimeIntervalSince1970:[[dictionary objectForKey:FIOTimeKey] integerValue]];
-    }
-
-    if ([dictionary objectForKey:FIOPrecipitationIntensityKey]) {
-        self.precipitationIntensity = [[dictionary objectForKey:FIOPrecipitationIntensityKey] floatValue];
-    }
+    
+    self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[FIOMinuteDataPointTimeKey] integerValue]];
+    self.precipitationIntensity = [dictionary[FIOMinuteDataPointPrecipitationIntensityKey] floatValue];
 }
 
 @end

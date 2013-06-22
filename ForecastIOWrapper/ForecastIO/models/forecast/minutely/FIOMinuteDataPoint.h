@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const FIOMinuteDataPointTimeKey;
+extern NSString *const FIOMinuteDataPointPrecipitationIntensityKey;
+
 /**
  Data model for the precipitation strength information returned from forecast.io's API.
  */
@@ -18,6 +21,7 @@
 @property (assign, nonatomic) CGFloat precipitationIntensity;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
++ (id)pointWithDictionary:(NSDictionary *)dictionary;
 - (void)updateWithDictionary:(NSDictionary *)dictionary;
 
 @end

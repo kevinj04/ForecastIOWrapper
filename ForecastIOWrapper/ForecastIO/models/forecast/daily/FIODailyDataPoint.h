@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const FIODailyDataPointSummaryKey;
+extern NSString *const FIODailyDataPointIconKey;
+extern NSString *const FIODailyDataPointTimeKey;
+extern NSString *const FIODailyDataPointSunriseTimeKey;
+extern NSString *const FIODailyDataPointSunsetTimeKey;
+extern NSString *const FIODailyDataPointPrecipIntensityKey;
+extern NSString *const FIODailyDataPointPrecipIntensityMaxKey;
+extern NSString *const FIODailyDataPointTemperatureMinKey;
+extern NSString *const FIODailyDataPointTemperatureMinTimeKey;
+extern NSString *const FIODailyDataPointTemperatureMaxKey;
+extern NSString *const FIODailyDataPointTemperatureMaxTimeKey;
+extern NSString *const FIODailyDataPointDewPointKey;
+extern NSString *const FIODailyDataPointWindSpeedKey;
+extern NSString *const FIODailyDataPointWindBearingKey;
+extern NSString *const FIODailyDataPointCloudCoverKey;
+extern NSString *const FIODailyDataPointHumidityKey;
+extern NSString *const FIODailyDataPointPressureKey;
+extern NSString *const FIODailyDataPointOzoneKey;
+
 @interface FIODailyDataPoint : NSObject
 
 @property (strong, nonatomic) NSString *summary;

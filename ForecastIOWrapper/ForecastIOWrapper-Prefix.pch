@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ForecastIOWrapper' target in the 'ForecastIOWrapper' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

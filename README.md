@@ -55,4 +55,10 @@ Add a method to your listener object to handle the notification.
 }
 ```
 
-There are a number of other notifications that fire during the course of updating the weather. Read more about them in the FIOAPI class.
+There are a number of other notifications that fire during the course of updating the weather. I'll cover them another day.
+
+To actually get your weather update:
+``` objc
+[FIOAPI requestWeatherForLocation:location];
+```
+Location is a CGPoint with (lat,long).

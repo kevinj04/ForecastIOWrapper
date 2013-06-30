@@ -12,3 +12,7 @@ I was building my own little for-fun weather app using this API and decided to b
 If you happen to use any of this code to make a million dollars on some phenomenal app, I'd appreciate a high-five the next time you see me. :beer: Which will probably be never. 
 
 More seriously, send me a message on here so I can go grab your app! 
+
+Using this thing:
+----------------
+For starters, if you want to run/add to the unit tests, you're going to need to install the [Cedar unit testing framework](https://github.com/pivotal/cedar) from the cool folks over at [Pivotal Labs](http://pivotallabs.com/). It's a BDD-style framework for iOS that hooks relatively nicely into Xcode and I've been using it for a while now. This will probably be replaced by the enhanced unit testing in Xcode 5, but for now, here it is.

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0BBC2618562F0D006D000E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
+		0A0BBC2718562F0D006D000E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09976177625A300C2A6EF /* CoreGraphics.framework */; };
+		0A0BBC2818562F0D006D000E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09897177611B600C2A6EF /* UIKit.framework */; };
+		0A0BBC2E18562F0D006D000E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BBC2C18562F0D006D000E /* InfoPlist.strings */; };
+		0A0BBC3018562F0D006D000E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BBC2F18562F0D006D000E /* main.m */; };
+		0A0BBC3418562F0D006D000E /* FCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BBC3318562F0D006D000E /* FCAppDelegate.m */; };
+		0A0BBC3718562F0D006D000E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BBC3518562F0D006D000E /* Main.storyboard */; };
+		0A0BBC3A18562F0D006D000E /* FCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BBC3918562F0D006D000E /* FCViewController.m */; };
+		0A0BBC3C18562F0D006D000E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BBC3B18562F0D006D000E /* Images.xcassets */; };
+		0A0BBC4318562F0D006D000E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0BBC4218562F0D006D000E /* XCTest.framework */; };
+		0A0BBC4418562F0D006D000E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
+		0A0BBC4518562F0D006D000E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09897177611B600C2A6EF /* UIKit.framework */; };
+		0A0BBC4D18562F0D006D000E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BBC4B18562F0D006D000E /* InfoPlist.strings */; };
+		0A0BBC4F18562F0D006D000E /* ForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BBC4E18562F0D006D000E /* ForecastTests.m */; };
+		0A0BBC5618562F30006D000E /* libForecastIOWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09883177611B600C2A6EF /* libForecastIOWrapper.a */; };
 		47E09887177611B600C2A6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E09886177611B600C2A6EF /* Foundation.framework */; };
 		47E09966177618E200C2A6EF /* FIOAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09950177618E200C2A6EF /* FIOAPI.m */; };
 		47E09967177618E200C2A6EF /* FIODailyDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E09955177618E200C2A6EF /* FIODailyDataPoint.m */; };
@@ -35,6 +50,23 @@
 		47EC222B17764D8B00D84C5E /* FIOForecastDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC222A17764D8B00D84C5E /* FIOForecastDataPoint.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A0BBC4618562F0D006D000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47E0987B177611B600C2A6EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0BBC2418562F0D006D000E;
+			remoteInfo = Forecast;
+		};
+		0A0BBC5718562F39006D000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47E0987B177611B600C2A6EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47E09882177611B600C2A6EF;
+			remoteInfo = ForecastIOWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		47E09881177611B600C2A6EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -48,6 +80,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0BBC2518562F0D006D000E /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0BBC2B18562F0D006D000E /* Forecast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Forecast-Info.plist"; sourceTree = "<group>"; };
+		0A0BBC2D18562F0D006D000E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A0BBC2F18562F0D006D000E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A0BBC3118562F0D006D000E /* Forecast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Forecast-Prefix.pch"; sourceTree = "<group>"; };
+		0A0BBC3218562F0D006D000E /* FCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCAppDelegate.h; sourceTree = "<group>"; };
+		0A0BBC3318562F0D006D000E /* FCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCAppDelegate.m; sourceTree = "<group>"; };
+		0A0BBC3618562F0D006D000E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A0BBC3818562F0D006D000E /* FCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCViewController.h; sourceTree = "<group>"; };
+		0A0BBC3918562F0D006D000E /* FCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCViewController.m; sourceTree = "<group>"; };
+		0A0BBC3B18562F0D006D000E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A0BBC4118562F0D006D000E /* ForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0BBC4218562F0D006D000E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0A0BBC4A18562F0D006D000E /* ForecastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForecastTests-Info.plist"; sourceTree = "<group>"; };
+		0A0BBC4C18562F0D006D000E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A0BBC4E18562F0D006D000E /* ForecastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastTests.m; sourceTree = "<group>"; };
 		47E09883177611B600C2A6EF /* libForecastIOWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libForecastIOWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E09886177611B600C2A6EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47E0988A177611B600C2A6EF /* ForecastIOWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForecastIOWrapper-Prefix.pch"; sourceTree = "<group>"; };
@@ -91,6 +139,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A0BBC2218562F0D006D000E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0BBC5618562F30006D000E /* libForecastIOWrapper.a in Frameworks */,
+				0A0BBC2718562F0D006D000E /* CoreGraphics.framework in Frameworks */,
+				0A0BBC2818562F0D006D000E /* UIKit.framework in Frameworks */,
+				0A0BBC2618562F0D006D000E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0BBC3E18562F0D006D000E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0BBC4318562F0D006D000E /* XCTest.framework in Frameworks */,
+				0A0BBC4518562F0D006D000E /* UIKit.framework in Frameworks */,
+				0A0BBC4418562F0D006D000E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47E09880177611B600C2A6EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,11 +183,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0BBC2918562F0D006D000E /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				0A0BBC3218562F0D006D000E /* FCAppDelegate.h */,
+				0A0BBC3318562F0D006D000E /* FCAppDelegate.m */,
+				0A0BBC3518562F0D006D000E /* Main.storyboard */,
+				0A0BBC3818562F0D006D000E /* FCViewController.h */,
+				0A0BBC3918562F0D006D000E /* FCViewController.m */,
+				0A0BBC3B18562F0D006D000E /* Images.xcassets */,
+				0A0BBC2A18562F0D006D000E /* Supporting Files */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		0A0BBC2A18562F0D006D000E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A0BBC2B18562F0D006D000E /* Forecast-Info.plist */,
+				0A0BBC2C18562F0D006D000E /* InfoPlist.strings */,
+				0A0BBC2F18562F0D006D000E /* main.m */,
+				0A0BBC3118562F0D006D000E /* Forecast-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A0BBC4818562F0D006D000E /* ForecastTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0BBC4E18562F0D006D000E /* ForecastTests.m */,
+				0A0BBC4918562F0D006D000E /* Supporting Files */,
+			);
+			path = ForecastTests;
+			sourceTree = "<group>";
+		};
+		0A0BBC4918562F0D006D000E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A0BBC4A18562F0D006D000E /* ForecastTests-Info.plist */,
+				0A0BBC4B18562F0D006D000E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		47E0987A177611B600C2A6EF = {
 			isa = PBXGroup;
 			children = (
 				47E09888177611B600C2A6EF /* ForecastIOWrapper */,
 				47E09978177625A300C2A6EF /* ForecastIOWrapperSpecs */,
+				0A0BBC2918562F0D006D000E /* Forecast */,
+				0A0BBC4818562F0D006D000E /* ForecastTests */,
 				47E09885177611B600C2A6EF /* Frameworks */,
 				47E09884177611B600C2A6EF /* Products */,
 			);
@@ -129,6 +243,8 @@
 			children = (
 				47E09883177611B600C2A6EF /* libForecastIOWrapper.a */,
 				47E09973177625A300C2A6EF /* ForecastIOWrapperSpecs.app */,
+				0A0BBC2518562F0D006D000E /* Forecast.app */,
+				0A0BBC4118562F0D006D000E /* ForecastTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +256,7 @@
 				47E09895177611B600C2A6EF /* SenTestingKit.framework */,
 				47E09897177611B600C2A6EF /* UIKit.framework */,
 				47E09976177625A300C2A6EF /* CoreGraphics.framework */,
+				0A0BBC4218562F0D006D000E /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +424,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A0BBC2418562F0D006D000E /* Forecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0BBC5418562F0D006D000E /* Build configuration list for PBXNativeTarget "Forecast" */;
+			buildPhases = (
+				0A0BBC2118562F0D006D000E /* Sources */,
+				0A0BBC2218562F0D006D000E /* Frameworks */,
+				0A0BBC2318562F0D006D000E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0BBC5818562F39006D000E /* PBXTargetDependency */,
+			);
+			name = Forecast;
+			productName = Forecast;
+			productReference = 0A0BBC2518562F0D006D000E /* Forecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A0BBC4018562F0D006D000E /* ForecastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0BBC5518562F0D006D000E /* Build configuration list for PBXNativeTarget "ForecastTests" */;
+			buildPhases = (
+				0A0BBC3D18562F0D006D000E /* Sources */,
+				0A0BBC3E18562F0D006D000E /* Frameworks */,
+				0A0BBC3F18562F0D006D000E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0BBC4718562F0D006D000E /* PBXTargetDependency */,
+			);
+			name = ForecastTests;
+			productName = ForecastTests;
+			productReference = 0A0BBC4118562F0D006D000E /* ForecastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		47E09882177611B600C2A6EF /* ForecastIOWrapper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47E098A8177611B600C2A6EF /* Build configuration list for PBXNativeTarget "ForecastIOWrapper" */;
@@ -349,6 +502,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = somethingPointless;
+				TargetAttributes = {
+					0A0BBC4018562F0D006D000E = {
+						TestTargetID = 47E09972177625A300C2A6EF;
+					};
+				};
 			};
 			buildConfigurationList = 47E0987E177611B600C2A6EF /* Build configuration list for PBXProject "ForecastIOWrapper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,6 +514,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 47E0987A177611B600C2A6EF;
 			productRefGroup = 47E09884177611B600C2A6EF /* Products */;
@@ -364,11 +523,31 @@
 			targets = (
 				47E09882177611B600C2A6EF /* ForecastIOWrapper */,
 				47E09972177625A300C2A6EF /* ForecastIOWrapperSpecs */,
+				0A0BBC2418562F0D006D000E /* Forecast */,
+				0A0BBC4018562F0D006D000E /* ForecastTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A0BBC2318562F0D006D000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0BBC3C18562F0D006D000E /* Images.xcassets in Resources */,
+				0A0BBC2E18562F0D006D000E /* InfoPlist.strings in Resources */,
+				0A0BBC3718562F0D006D000E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0BBC3F18562F0D006D000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0BBC4D18562F0D006D000E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47E09971177625A300C2A6EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +559,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A0BBC2118562F0D006D000E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0BBC3018562F0D006D000E /* main.m in Sources */,
+				0A0BBC3418562F0D006D000E /* FCAppDelegate.m in Sources */,
+				0A0BBC3A18562F0D006D000E /* FCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0BBC3D18562F0D006D000E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0BBC4F18562F0D006D000E /* ForecastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47E0987F177611B600C2A6EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,7 +612,44 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0A0BBC4718562F0D006D000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0BBC2418562F0D006D000E /* Forecast */;
+			targetProxy = 0A0BBC4618562F0D006D000E /* PBXContainerItemProxy */;
+		};
+		0A0BBC5818562F39006D000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47E09882177611B600C2A6EF /* ForecastIOWrapper */;
+			targetProxy = 0A0BBC5718562F39006D000E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0A0BBC2C18562F0D006D000E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0BBC2D18562F0D006D000E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A0BBC3518562F0D006D000E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0BBC3618562F0D006D000E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A0BBC4B18562F0D006D000E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0BBC4C18562F0D006D000E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		47E0997B177625A300C2A6EF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,6 +661,128 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A0BBC5018562F0D006D000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Forecast/Forecast-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Forecast/Forecast-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A0BBC5118562F0D006D000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Forecast/Forecast-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Forecast/Forecast-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A0BBC5218562F0D006D000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForecastIOWrapperSpecs.app/ForecastIOWrapperSpecs";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Forecast/Forecast-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ForecastTests/ForecastTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0A0BBC5318562F0D006D000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForecastIOWrapperSpecs.app/ForecastIOWrapperSpecs";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Forecast/Forecast-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "ForecastTests/ForecastTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		47E098A6177611B600C2A6EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -552,6 +908,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A0BBC5418562F0D006D000E /* Build configuration list for PBXNativeTarget "Forecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0BBC5018562F0D006D000E /* Debug */,
+				0A0BBC5118562F0D006D000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A0BBC5518562F0D006D000E /* Build configuration list for PBXNativeTarget "ForecastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0BBC5218562F0D006D000E /* Debug */,
+				0A0BBC5318562F0D006D000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		47E0987E177611B600C2A6EF /* Build configuration list for PBXProject "ForecastIOWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

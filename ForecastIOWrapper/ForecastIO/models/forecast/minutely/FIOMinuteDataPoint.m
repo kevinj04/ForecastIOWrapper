@@ -8,8 +8,9 @@
 
 #import "FIOMinuteDataPoint.h"
 
-NSString *const FIOMinuteDataPointTimeKey = @"time";
-NSString *const FIOMinuteDataPointPrecipitationIntensityKey = @"precipIntensity";
+NSString *const FIOMinuteDataPointTimeKey                       = @"time";
+NSString *const FIOMinuteDataPointPrecipitationIntensityKey     = @"precipIntensity";
+NSString *const FIOMinuteDataPointPrecipitationProbabilityKey   = @"precipProbability";
 
 @implementation FIOMinuteDataPoint
 
@@ -28,6 +29,7 @@ NSString *const FIOMinuteDataPointPrecipitationIntensityKey = @"precipIntensity"
     
     self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[FIOMinuteDataPointTimeKey] integerValue]];
     self.precipitationIntensity = [dictionary[FIOMinuteDataPointPrecipitationIntensityKey] floatValue];
+    sel
 }
 
 @end

@@ -29,7 +29,7 @@ NSString *const FIOMinuteDataPointPrecipitationProbabilityKey   = @"precipProbab
     
     self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[FIOMinuteDataPointTimeKey] integerValue]];
     self.precipitationIntensity = [dictionary[FIOMinuteDataPointPrecipitationIntensityKey] floatValue];
-    sel
+    self.precipitationProbability = [dictionary[FIOMinuteDataPointPrecipitationProbabilityKey] floatValue];
 }
 
 @end

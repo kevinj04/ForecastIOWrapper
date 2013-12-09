@@ -13,6 +13,7 @@ extern NSString *const FIOHourDataPointSummaryKey;
 extern NSString *const FIOHourDataPointIconKey;
 extern NSString *const FIOHourDataPointTimeKey;
 extern NSString *const FIOHourDataPointPrecipIntensityKey;
+extern NSString *const FIOHourDataPointPrecipProbabilityKey;;
 extern NSString *const FIOHourDataPointTemperatureKey;
 extern NSString *const FIOHourDataPointDewPointKey;
 extern NSString *const FIOHourDataPointWindSpeedKey;
@@ -25,18 +26,19 @@ extern NSString *const FIOHourDataPointOzoneKey;
 
 @interface FIOHourDataPoint : FIOForecastDataPoint
 
-@property (strong, nonatomic) NSString *summary;
-@property (strong, nonatomic) NSString *icon;
-@property (strong, nonatomic) NSDate *time;
-@property (assign, nonatomic) CGFloat precipitationIntensity;
-@property (assign, nonatomic) CGFloat temperature;
-@property (assign, nonatomic) CGFloat dewPoint;
-@property (assign, nonatomic) CGFloat windSpeed;
-@property (assign, nonatomic) CGFloat windBearing;
-@property (assign, nonatomic) CGFloat cloudCover;
-@property (assign, nonatomic) CGFloat humidity;
-@property (assign, nonatomic) CGFloat pressure;
-@property (assign, nonatomic) CGFloat visibility;
-@property (assign, nonatomic) CGFloat ozone;
+@property (strong, nonatomic) NSString  *summary;
+@property (strong, nonatomic) NSString  *icon;
+@property (strong, nonatomic) NSDate    *time;
+@property (assign, nonatomic) CGFloat   precipitationIntensity;
+@property (assign, nonatomic) CGFloat   precipitationProbability;
+@property (assign, nonatomic) CGFloat   temperature;
+@property (assign, nonatomic) CGFloat   dewPoint;
+@property (assign, nonatomic) CGFloat   windSpeed;
+@property (assign, nonatomic) CGFloat   windBearing;
+@property (assign, nonatomic) CGFloat   cloudCover;
+@property (assign, nonatomic) CGFloat   humidity;
+@property (assign, nonatomic) CGFloat   pressure;
+@property (assign, nonatomic) CGFloat   visibility;
+@property (assign, nonatomic) CGFloat   ozone;
 
 @end

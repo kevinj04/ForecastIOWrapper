@@ -8,24 +8,25 @@
 
 #import "FIODailyDataPoint.h"
 
-NSString *const FIODailyDataPointSummaryKey = @"summary";
-NSString *const FIODailyDataPointIconKey = @"icon";
-NSString *const FIODailyDataPointTimeKey = @"time";
-NSString *const FIODailyDataPointSunriseTimeKey = @"sunriseTime";
-NSString *const FIODailyDataPointSunsetTimeKey = @"sunsetTime";
-NSString *const FIODailyDataPointPrecipIntensityKey = @"precipIntensity";
-NSString *const FIODailyDataPointPrecipIntensityMaxKey = @"precipIntensityMax";
-NSString *const FIODailyDataPointTemperatureMinKey = @"temperatureMin";
-NSString *const FIODailyDataPointTemperatureMinTimeKey = @"temperatureMinTime";
-NSString *const FIODailyDataPointTemperatureMaxKey = @"temperatureMax";
-NSString *const FIODailyDataPointTemperatureMaxTimeKey = @"temperatureMaxTime";
-NSString *const FIODailyDataPointDewPointKey = @"dewPoint";
-NSString *const FIODailyDataPointWindSpeedKey = @"windSpeed";
-NSString *const FIODailyDataPointWindBearingKey = @"windBearing";
-NSString *const FIODailyDataPointCloudCoverKey = @"cloudCover";
-NSString *const FIODailyDataPointHumidityKey = @"humidity";
-NSString *const FIODailyDataPointPressureKey = @"pressure";
-NSString *const FIODailyDataPointOzoneKey = @"ozone";
+NSString *const FIODailyDataPointSummaryKey             = @"summary";
+NSString *const FIODailyDataPointIconKey                = @"icon";
+NSString *const FIODailyDataPointTimeKey                = @"time";
+NSString *const FIODailyDataPointSunriseTimeKey         = @"sunriseTime";
+NSString *const FIODailyDataPointSunsetTimeKey          = @"sunsetTime";
+NSString *const FIODailyDataPointPrecipIntensityKey     = @"precipIntensity";
+NSString *const FIODailyDataPointPrecipProbabilityKey   = @"precipProbability";
+NSString *const FIODailyDataPointPrecipIntensityMaxKey  = @"precipIntensityMax";
+NSString *const FIODailyDataPointTemperatureMinKey      = @"temperatureMin";
+NSString *const FIODailyDataPointTemperatureMinTimeKey  = @"temperatureMinTime";
+NSString *const FIODailyDataPointTemperatureMaxKey      = @"temperatureMax";
+NSString *const FIODailyDataPointTemperatureMaxTimeKey  = @"temperatureMaxTime";
+NSString *const FIODailyDataPointDewPointKey            = @"dewPoint";
+NSString *const FIODailyDataPointWindSpeedKey           = @"windSpeed";
+NSString *const FIODailyDataPointWindBearingKey         = @"windBearing";
+NSString *const FIODailyDataPointCloudCoverKey          = @"cloudCover";
+NSString *const FIODailyDataPointHumidityKey            = @"humidity";
+NSString *const FIODailyDataPointPressureKey            = @"pressure";
+NSString *const FIODailyDataPointOzoneKey               = @"ozone";
 
 @implementation FIODailyDataPoint
 

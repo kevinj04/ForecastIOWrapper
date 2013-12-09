@@ -8,19 +8,20 @@
 
 #import "FIOHourDataPoint.h"
 
-NSString *const FIOHourDataPointSummaryKey = @"summary";
-NSString *const FIOHourDataPointIconKey = @"icon";
-NSString *const FIOHourDataPointTimeKey = @"time";
-NSString *const FIOHourDataPointPrecipIntensityKey = @"precipIntensity";
-NSString *const FIOHourDataPointTemperatureKey = @"temperature";
-NSString *const FIOHourDataPointDewPointKey = @"dewPoint";
-NSString *const FIOHourDataPointWindSpeedKey = @"windSpeed";
-NSString *const FIOHourDataPointWindBearingKey = @"windBearing";
-NSString *const FIOHourDataPointCloudCoverKey = @"cloudCover";
-NSString *const FIOHourDataPointHumidityKey = @"humidity";
-NSString *const FIOHourDataPointPressureKey = @"pressure";
-NSString *const FIOHourDataPointVisibilityKey = @"visibility";
-NSString *const FIOHourDataPointOzoneKey = @"ozone";
+NSString *const FIOHourDataPointSummaryKey              = @"summary";
+NSString *const FIOHourDataPointIconKey                 = @"icon";
+NSString *const FIOHourDataPointTimeKey                 = @"time";
+NSString *const FIOHourDataPointPrecipIntensityKey      = @"precipIntensity";
+NSString *const FIOHourDataPointPrecipProbabilityKey    = @"precipProbability";
+NSString *const FIOHourDataPointTemperatureKey          = @"temperature";
+NSString *const FIOHourDataPointDewPointKey             = @"dewPoint";
+NSString *const FIOHourDataPointWindSpeedKey            = @"windSpeed";
+NSString *const FIOHourDataPointWindBearingKey          = @"windBearing";
+NSString *const FIOHourDataPointCloudCoverKey           = @"cloudCover";
+NSString *const FIOHourDataPointHumidityKey             = @"humidity";
+NSString *const FIOHourDataPointPressureKey             = @"pressure";
+NSString *const FIOHourDataPointVisibilityKey           = @"visibility";
+NSString *const FIOHourDataPointOzoneKey                = @"ozone";
 
 @implementation FIOHourDataPoint
 
@@ -42,6 +43,7 @@ NSString *const FIOHourDataPointOzoneKey = @"ozone";
     self.icon = dictionary[FIOHourDataPointIconKey];
     self.time = [NSDate dateWithTimeIntervalSince1970:[dictionary[FIOHourDataPointTimeKey] integerValue]];
     self.precipitationIntensity = [dictionary[FIOHourDataPointPrecipIntensityKey] floatValue];
+    self.precipitationProbability = [dictionary[FIOHourDataPointPrecipProbabilityKey] floatValue];
     self.temperature = [dictionary[FIOHourDataPointTemperatureKey] floatValue];
     self.dewPoint = [dictionary[FIOHourDataPointDewPointKey] floatValue];
     self.windSpeed = [dictionary[FIOHourDataPointWindSpeedKey] floatValue];
